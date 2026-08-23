@@ -1,0 +1,82 @@
+/* Navbar */
+
+.navbar {
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #181818;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav-links a:hover {
+  color: #e50914;
+}
+
+
+/* Main App */
+
+.app {
+  min-height: 100vh;
+  text-align: center;
+}
+
+.app h1 {
+  font-size: 48px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.app p {
+  font-size: 20px;
+}
+
+
+/* Search Box */
+
+.search-box {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search-box input {
+  width: 400px;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search-box button {
+  padding: 15px 25px;
+  font-size: 16px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background-color: #b20710;
+}
