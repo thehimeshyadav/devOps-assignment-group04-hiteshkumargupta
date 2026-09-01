@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - SkillMarket</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gray-50">
+
+<div class="min-h-screen flex items-center justify-center px-6">
+
+    <div class="bg-white shadow-xl rounded-2xl p-8 w-full max-w-md">
+
+        <div class="text-center mb-8">
+
+            <a href="index.html"
+               class="text-3xl font-bold text-indigo-600">
+                SkillMarket
+            </a>
+
+            <h2 class="text-2xl font-bold mt-5">
+                Welcome Back
+            </h2>
+
+            <p class="text-gray-500 mt-2">
+                Login to your account
+            </p>
+
+        </div>
+
+        <form id="loginForm">
+
+            <label class="form-label">Email</label>
+
+            <input id="loginEmail"
+                   type="email"
+                   class="form-input"
+                   placeholder="Enter your email">
+
+            <label class="form-label">Password</label>
+
+            <input id="loginPassword"
+                   type="password"
+                   class="form-input"
+                   placeholder="Enter password">
+
+            <button type="submit"
+                    class="w-full bg-indigo-600 text-white py-3 rounded-lg mt-5 hover:bg-indigo-700">
+                Login
+            </button>
+
+        </form>
+
+        <p id="loginMessage"
+           class="text-center mt-4 font-medium"></p>
+
+        <p class="text-center mt-6 text-gray-600">
+            Don't have an account?
+            <a href="register.html"
+               class="text-indigo-600 font-semibold">
+                Register
+            </a>
+        </p>
+
+    </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

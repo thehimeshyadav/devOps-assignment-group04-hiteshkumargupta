@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - SkillMarket</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gray-50">
+
+<div class="min-h-screen flex items-center justify-center px-6">
+
+    <div class="bg-white shadow-xl rounded-2xl p-8 w-full max-w-md">
+
+        <div class="text-center mb-8">
+            <a href="index.html" class="text-3xl font-bold text-indigo-600">
+                SkillMarket
+            </a>
+
+            <h2 class="text-2xl font-bold mt-5">
+                Create Account
+            </h2>
+
+            <p class="text-gray-500 mt-2">
+                Join the student skill community
+            </p>
+        </div>
+
+        <form id="registerForm">
+
+            <label class="form-label">Full Name</label>
+            <input id="name" type="text"
+                   class="form-input"
+                   placeholder="Enter your name">
+
+            <label class="form-label">Email</label>
+            <input id="email" type="email"
+                   class="form-input"
+                   placeholder="Enter your email">
+
+            <label class="form-label">Password</label>
+            <input id="password" type="password"
+                   class="form-input"
+                   placeholder="Enter password">
+
+            <label class="form-label">Confirm Password</label>
+            <input id="confirmPassword" type="password"
+                   class="form-input"
+                   placeholder="Confirm password">
+
+            <button type="submit"
+                    class="w-full bg-indigo-600 text-white py-3 rounded-lg mt-5 hover:bg-indigo-700">
+                Create Account
+            </button>
+
+        </form>
+
+        <p id="registerMessage"
+           class="text-center mt-4 font-medium"></p>
+
+        <p class="text-center mt-6 text-gray-600">
+            Already have an account?
+            <a href="login.html" class="text-indigo-600 font-semibold">
+                Login
+            </a>
+        </p>
+
+    </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

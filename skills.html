@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Browse Skills - SkillMarket</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gray-50">
+
+<nav class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between">
+
+        <a href="index.html"
+           class="text-2xl font-bold text-indigo-600">
+            SkillMarket
+        </a>
+
+        <div class="flex gap-5">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html">Profile</a>
+        </div>
+
+    </div>
+</nav>
+
+<main class="max-w-7xl mx-auto px-6 py-10">
+
+    <div class="text-center">
+
+        <h1 class="text-4xl font-bold">
+            Browse Student Skills
+        </h1>
+
+        <p class="text-gray-500 mt-3">
+            Discover skills offered by students.
+        </p>
+
+    </div>
+
+    <div class="mt-10 grid md:grid-cols-2 gap-4">
+
+        <input id="searchSkill"
+               type="text"
+               placeholder="Search skills..."
+               class="form-input">
+
+        <select id="categoryFilter"
+                class="form-input">
+
+            <option value="all">All Categories</option>
+            <option value="development">Development</option>
+            <option value="design">Design</option>
+            <option value="marketing">Marketing</option>
+            <option value="business">Business</option>
+
+        </select>
+
+    </div>
+
+    <div id="skillsContainer"
+         class="grid md:grid-cols-3 gap-6 mt-10">
+
+        <div class="skill-card"
+             data-name="web development"
+             data-category="development">
+
+            <div class="skill-icon">💻</div>
+
+            <h2>Web Development</h2>
+
+            <p>
+                Learn HTML, CSS, JavaScript and frontend development.
+            </p>
+
+            <span class="skill-category">
+                Development
+            </span>
+
+            <button class="view-btn">
+                View Details
+            </button>
+
+        </div>
+
+        <div class="skill-card"
+             data-name="graphic design"
+             data-category="design">
+
+            <div class="skill-icon">🎨</div>
+
+            <h2>Graphic Design</h2>
+
+            <p>
+                Learn creative design and visual communication.
+            </p>
+
+            <span class="skill-category">
+                Design
+            </span>
+
+            <button class="view-btn">
+                View Details
+            </button>
+
+        </div>
+
+        <div class="skill-card"
+             data-name="python programming"
+             data-category="development">
+
+            <div class="skill-icon">🐍</div>
+
+            <h2>Python Programming</h2>
+
+            <p>
+                Learn Python programming and problem solving.
+            </p>
+
+            <span class="skill-category">
+                Development
+            </span>
+
+            <button class="view-btn">
+                View Details
+            </button>
+
+        </div>
+
+        <div class="skill-card"
+             data-name="digital marketing"
+             data-category="marketing">
+
+            <div class="skill-icon">📱</div>
+
+            <h2>Digital Marketing</h2>
+
+            <p>
+                Learn social media and digital marketing strategies.
+            </p>
+
+            <span class="skill-category">
+                Marketing
+            </span>
+
+            <button class="view-btn">
+                View Details
+            </button>
+
+        </div>
+
+        <div class="skill-card"
+             data-name="public speaking"
+             data-category="business">
+
+            <div class="skill-icon">🎤</div>
+
+            <h2>Public Speaking</h2>
+
+            <p>
+                Improve communication and presentation skills.
+            </p>
+
+            <span class="skill-category">
+                Business
+            </span>
+
+            <button class="view-btn">
+                View Details
+            </button>
+
+        </div>
+
+        <div class="skill-card"
+             data-name="video editing"
+             data-category="design">
+
+            <div class="skill-icon">🎬</div>
+
+            <h2>Video Editing</h2>
+
+            <p>
+                Learn video editing and content creation.
+            </p>
+
+            <span class="skill-category">
+                Design
+            </span>
+
+            <button class="view-btn">
+                View Details
+            </button>
+
+        </div>
+
+    </div>
+
+</main>
+
+<script src="js/app.js"></script>
+</body>
+</html>

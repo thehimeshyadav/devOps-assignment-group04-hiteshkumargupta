@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile - SkillMarket</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="bg-gray-50">
+
+<nav class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+
+        <a href="dashboard.html"
+           class="text-2xl font-bold text-indigo-600">
+            SkillMarket
+        </a>
+
+    </div>
+</nav>
+
+<div class="max-w-4xl mx-auto px-6 py-12">
+
+    <div class="bg-white rounded-2xl shadow-lg p-8">
+
+        <div class="text-center">
+
+            <div class="profile-avatar">
+                👤
+            </div>
+
+            <h1 id="profileName"
+                class="text-3xl font-bold mt-4">
+                Student
+            </h1>
+
+            <p id="profileEmail"
+               class="text-gray-500">
+                student@example.com
+            </p>
+
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 mt-10">
+
+            <div>
+                <label class="form-label">
+                    Full Name
+                </label>
+
+                <input id="profileNameInput"
+                       class="form-input">
+            </div>
+
+            <div>
+                <label class="form-label">
+                    Email
+                </label>
+
+                <input id="profileEmailInput"
+                       class="form-input">
+            </div>
+
+        </div>
+
+        <div class="mt-6">
+
+            <label class="form-label">
+                About Me
+            </label>
+
+            <textarea class="form-input"
+                      rows="5"
+                      placeholder="Tell something about yourself..."></textarea>
+
+        </div>
+
+        <button id="saveProfile"
+                class="bg-indigo-600 text-white px-6 py-3 rounded-lg mt-6">
+            Save Profile
+        </button>
+
+        <p id="profileMessage"
+           class="mt-4 font-semibold">
+        </p>
+
+    </div>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

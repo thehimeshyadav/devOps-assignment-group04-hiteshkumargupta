@@ -1,0 +1,105 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Skill - SkillMarket</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gray-50">
+
+<nav class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+
+        <a href="dashboard.html"
+           class="text-2xl font-bold text-indigo-600">
+            SkillMarket
+        </a>
+
+    </div>
+</nav>
+
+<div class="max-w-3xl mx-auto px-6 py-12">
+
+    <div class="bg-white shadow-lg rounded-2xl p-8">
+
+        <h1 class="text-3xl font-bold">
+            Add Your Skill
+        </h1>
+
+        <p class="text-gray-500 mt-2">
+            Share your knowledge with other students.
+        </p>
+
+        <form id="skillForm" class="mt-8">
+
+            <label class="form-label">
+                Skill Name
+            </label>
+
+            <input id="skillName"
+                   type="text"
+                   class="form-input"
+                   placeholder="e.g. Web Development">
+
+            <label class="form-label">
+                Category
+            </label>
+
+            <select id="skillCategory"
+                    class="form-input">
+
+                <option value="">Select Category</option>
+                <option>Development</option>
+                <option>Design</option>
+                <option>Marketing</option>
+                <option>Business</option>
+
+            </select>
+
+            <label class="form-label">
+                Skill Level
+            </label>
+
+            <select id="skillLevel"
+                    class="form-input">
+
+                <option value="">Select Level</option>
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+
+            </select>
+
+            <label class="form-label">
+                Description
+            </label>
+
+            <textarea id="skillDescription"
+                      class="form-input"
+                      rows="5"
+                      placeholder="Describe your skill..."></textarea>
+
+            <button type="submit"
+                    class="w-full bg-indigo-600 text-white py-3 rounded-lg mt-6">
+                Add Skill
+            </button>
+
+        </form>
+
+        <p id="skillMessage"
+           class="text-center mt-5 font-semibold"></p>
+
+    </div>
+
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
