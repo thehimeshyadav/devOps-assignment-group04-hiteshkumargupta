@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
+import MovieSearch from "./components/MovieSearch";
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -51,10 +52,13 @@ function App() {
       {/* Navbar */}
       <Navbar />
 
-      {/* Main Content */}
+      {/* Movie Search */}
+      <MovieSearch />
+
+      {/* Popular Movies */}
       <main
         style={{
-          padding: "40px",
+          padding: "20px 40px 50px",
           boxSizing: "border-box",
         }}
       >
@@ -82,7 +86,7 @@ function App() {
               fontSize: "16px",
             }}
           >
-            Discover movies from TMDB
+            Popular Movies
           </p>
 
           {loading && (
