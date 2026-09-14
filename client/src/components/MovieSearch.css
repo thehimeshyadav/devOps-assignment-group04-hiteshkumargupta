@@ -1,0 +1,143 @@
+.movie-search {
+  width: 100%;
+  padding: 20px 40px 50px;
+  box-sizing: border-box;
+}
+
+.search-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.search-container h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  max-width: 700px;
+  margin: 0 auto 35px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 14px 18px;
+  border-radius: 8px;
+  border: 1px solid #334766;
+  outline: none;
+  background: #101f38;
+  color: white;
+  font-size: 16px;
+}
+
+.search-box input::placeholder {
+  color: #8d9bb0;
+}
+
+.search-box input:focus {
+  border-color: #5b8def;
+}
+
+.search-box button {
+  padding: 14px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #315fbd;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background: #4072d4;
+}
+
+.search-message,
+.search-error {
+  text-align: center;
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+.search-error {
+  color: #ff6b6b;
+}
+
+.search-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 28px;
+}
+
+.search-movie-card {
+  background: #101f38;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.search-movie-card img,
+.no-poster {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.no-poster {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #172947;
+  color: #9caac0;
+}
+
+.search-movie-info {
+  padding: 18px;
+}
+
+.search-movie-info h3 {
+  font-size: 19px;
+  margin: 0 0 12px;
+  line-height: 1.3;
+}
+
+.search-movie-info p {
+  color: #9caac0;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 7px 0;
+}
+
+.search-movie-info p:first-of-type {
+  color: #ffd166;
+  font-weight: bold;
+}
+
+.movie-overview {
+  color: #c8d2e1 !important;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .movie-search {
+    padding: 20px;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+
+  .search-box button {
+    width: 100%;
+  }
+}
